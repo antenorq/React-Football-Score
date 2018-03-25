@@ -29,22 +29,26 @@ class ScoreContainer extends Component
   render()
   {
     return(
-    	<div className="area_score">
-        
-            <div className="float_margin_border">
-                <h3>Casa</h3>
-                <Team nome={this.props.casa.nome} goals={this.state.goals_casa} addGoals={this.addGoalsCasa.bind(this)} />
-            </div>
+    	<div className="container area_score">        
+            
+            <div className="row center">               
 
-            <div className="float_margin_border">
-                <Local stadium={this.props.local.stadium} date={this.props.local.date} time={this.props.local.time}  />
-            </div>
+                <div className="col-sm-5">
+                    <h3 className="text-info">Casa</h3>
+                    <Team nome={this.props.casa.nome} goals={this.state.goals_casa} addGoals={this.addGoalsCasa.bind(this)} />
+                </div>
 
-            <div className="float_margin_border">
-                <h3>Visitante</h3>
-                <Team nome={this.props.visitante.nome} goals={this.state.goals_visitante} addGoals={this.addGoalsVisitante.bind(this)} />
-            </div>
+                <div className="col-sm-2">
+                    <Local stadium={this.props.local.stadium} date={this.props.local.date} time={this.props.local.time}  />
+                </div>
 
+                <div className="col-sm-5">
+                    <h3 className="text-info">Visitante</h3>
+                    <Team nome={this.props.visitante.nome} goals={this.state.goals_visitante} addGoals={this.addGoalsVisitante.bind(this)} />
+                </div>
+
+            </div>
+           
             <div className="clear"></div>
 
         </div>

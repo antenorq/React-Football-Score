@@ -1,33 +1,36 @@
 import React, { Component } from 'react';
 import ScoreContainer from './components/ScoreContainer';
+import Header from './components/Header';
+
 
 const data = 
 {
     local:
     {
-        stadium:"Maracanã/RJ",
+        stadium:"Maracanã",
         date:"25/03/2018",
         time:"10:00",
     },
     casa:
     {
-        nome:"Vitória",
+        nome:"Flamengo",
     },
     visitante:
     {
-        nome:"Bahia",
+        nome:"Vasco",
     },
 }
 
 
 class App extends Component
 {
-
-
     render()
     {
-        return(      
-            <ScoreContainer local={data.local} casa={data.casa} visitante={data.visitante} />      
+        return( 
+            <div>
+                <Header/>
+                <ScoreContainer local={data.local} casa={data.casa} visitante={data.visitante} />
+            </div>
         );
     }
 }

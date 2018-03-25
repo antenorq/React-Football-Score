@@ -4,24 +4,33 @@ body {
   font-family: sans-serif;
 }
 
-
+header
+{
+	text-align: center;
+	font-size: 23px;
+	padding: 30px;
+}
 .area_score
 {
-	margin: 0 auto;
-	border:solid 1px #ff0000;
-	width: 800px;
+	border-radius: 10px;
+	border:solid 1px #ccc;
+	padding: 20px;
 }
-
-.float_margin_border
+.local
 {
-	float:left;
-	margin-right:20px;
-	border:solid 1px #000;
-	width: 240px;
+	margin-top: 80px;
+	background-color: #fff;
 }
 
 .clear
 {
 	clear: both;
 }
+
+.center
+{
+	text-align: center;
+}
+
+
 

@@ -6,9 +6,9 @@ class Team extends Component
   render()
   {
     return(
-    	<div>
-            <h1>{this.props.nome}</h1>
-            <h2>{this.props.goals}</h2>
+    	<div className="alert alert-success">
+            <h1 className="text-info">{this.props.nome}</h1>
+            <h2 className="text-success"><b>{this.props.goals}</b></h2>
             <AddGoal addGoals={this.props.addGoals}/>
         </div>
     );

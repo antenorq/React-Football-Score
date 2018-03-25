@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class AddGoal extends Component
 {
-
   handleClick(event)
   {
     event.preventDefault();
@@ -12,7 +11,7 @@ class AddGoal extends Component
   render()
   {
     return(
-        <button onClick={this.handleClick.bind(this)}>Add Goal!</button>        
+        <button className="btn btn-danger" onClick={this.handleClick.bind(this)}>Add Goal!</button>
     );
   }
 }
