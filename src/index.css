@@ -3,3 +3,25 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+.area_score
+{
+	margin: 0 auto;
+	border:solid 1px #ff0000;
+	width: 800px;
+}
+
+.float_margin_border
+{
+	float:left;
+	margin-right:20px;
+	border:solid 1px #000;
+	width: 240px;
+}
+
+.clear
+{
+	clear: both;
+}
+
