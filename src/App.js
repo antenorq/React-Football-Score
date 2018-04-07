@@ -11,14 +11,16 @@ const data =
         date:"25/03/2018",
         time:"10:00",
     },
-    casa:
+    home:
     {
-        nome:"Flamengo",
+        name:"Flamengo",
     },
-    visitante:
+    visitor:
     {
-        nome:"Vasco",
+        name:"Vasco",
     },
+    weather: 'sunny',
+
 }
 
 
@@ -29,7 +31,7 @@ class App extends Component
         return( 
             <div>
                 <Header/>
-                <ScoreContainer local={data.local} casa={data.casa} visitante={data.visitante} />
+                <ScoreContainer {...data} />
             </div>
         );
     }

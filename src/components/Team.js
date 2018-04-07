@@ -7,7 +7,7 @@ class Team extends Component
   {
     return(
     	<div className="alert alert-success">
-            <h1 className="text-info">{this.props.nome}</h1>
+            <h1 className="text-info">{this.props.name}</h1>
             <h2 className="text-success"><b>{this.props.goals}</b></h2>
             <AddGoal addGoals={this.props.addGoals}/>
         </div>
